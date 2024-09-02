@@ -1,0 +1,16 @@
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Mengambil data dari form
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Mengirim data ke server atau API (misalnya dengan fetch)
+    // Ini adalah contoh statis, jika Anda tidak memiliki server, data tidak akan dikirim
+
+    document.getElementById('responseMessage').textContent = `Terima kasih, ${name}! Pesan Anda telah dikirim.`;
+
+    // Reset form setelah pengiriman
+    document.getElementById('contactForm').reset();
+});
